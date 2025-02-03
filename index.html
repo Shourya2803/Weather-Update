@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weather Update</h1>
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off">
+            <button type="submit">Get Weather</button>
+        </form>
+        <button id="geoLocation">Use My Location</button>
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="condition"></p>
+           
+            <button id="toggleUnit">Switch to °F</button>
+        </div>
+        <p id="error" class="error"></p>
+    </div>
+</body>
+</html>
